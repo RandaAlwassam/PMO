@@ -1,0 +1,175 @@
+/* Font definitions */
+@font-face {
+    font-family: din;
+    src: url('Fonts/Cairo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: dinw;
+    src: url('Fonts/Cairo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: dinr;
+    src: url('Fonts/Expo\ Arabic\ Book.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: din, sans-serif;
+    direction: ltr;
+}
+
+.page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+}
+
+.logo img {
+    height: 100px;
+}
+
+.title {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.step {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.step.alt {
+    background-color: #e0e0e0;
+}
+
+.step h2 {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    font-size: 22px;
+    color: #236de4;
+    font-style: bold;
+}
+
+.step-icon {
+    height: 44px;
+    margin-right: 10px;
+}
+
+.substeps {
+    display: none;
+    margin-left: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.substeps li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #8a1b1b;
+}
+
+/* Style for ordered lists */
+ol.substeps {
+    padding-left: 0;
+    color: #1b8a24;
+}
+
+ol.substeps li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px; /* Space for the checkbox */
+    color: #555;
+
+}
+
+/* Style for the checkbox */
+ol.substeps input[type="checkbox"] {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Style for labels */
+ol.substeps label {
+    cursor: pointer;
+    display: inline-block;
+    width: calc(100% - 30px); /* Adjust based on checkbox width */
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Strikethrough effect for checked items */
+ol.substeps input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color:#6f3535; /* Optional: Change text color for checked items */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .page {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 100px;
+    }
+
+    .step {
+        padding: 10px;
+    }
+
+    .step h2 {
+        font-size: 16px;
+    }
+
+    .step-icon {
+        height: 40px;
+    }
+
+    .substeps li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 30px;
+    }
+
+    .step {
+        padding: 5px;
+    }
+
+    .step h2 {
+        font-size: 14px;
+    }
+
+    .step-icon {
+        height: 16px;
+    }
+
+    .substeps li {
+        font-size: 12px;
+    }
+}

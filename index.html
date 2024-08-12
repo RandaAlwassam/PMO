@@ -1,38 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do List</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <form class="form">
-      <input
-        type="text"
-        class="input"
-        placeholder="Enter your task"
-        autocomplete="off"
-      />
-      <ul class="list">
-        <!-- <li>
-          Buy Milk <i class="fas fa-check-square"></i
-          ><i class="fas fa-trash"></i>
-        </li>
-        <li class="checked">
-          Call David <i class="fas fa-check-square"></i
-          ><i class="fas fa-trash"></i>
-        </li> -->
-      </ul>
-    </form>
-    <script src="index.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Onboarding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="AZM Logo.png">
+</head>
+<body>
+    <div class="page">
+        <div class="logo left">
+            <img src="left-logo.png" alt="شعار يسار">
+        </div>
+        <div class="logo right">
+            <img src="right-logo.png" alt="شعار يمين">
+        </div>
+        <div class="title">
+            <h1>Projects Onboarding User Manual</h1>
+        </div>
+        <div class="content">
+            <div class="step">
+                <h2><img src="step1-icon.png" alt="Jira logo" class="step-icon">Create Jira Board</h2>
+                <ol class="substeps">
+                    <li><input type="checkbox" id="step1-1"><label for="step1-1">Log in to Jira</label></li>
+                    <li><input type="checkbox" id="step1-2"><label for="step1-2">Navigate to All projects from Project menu</label></li>
+                    <li><input type="checkbox" id="step1-3"><label for="step1-3">Click Create Project</label></li>
+                    <li><input type="checkbox" id="step1-4"><label for="step1-4">Choose Work management -> blank project</label></li>
+                    <li><input type="checkbox" id="step1-5"><label for="step1-5">Fill creating new project form </label></li>
+                    <li><ol>
+                        <li><input type="checkbox" id="step1-5-1"><label for="step1-5-1">project name = cost center (information will be found from Zoho)</label></li>
+                        <li><input type="checkbox" id="step1-5-2"><label for="step1-5-2">project type = company_managed</label></li>
+                        <li><input type="checkbox" id="step1-5-3"><label for="step1-5-3">Share settings with an existing project check box = checked</label></li>
+                        <li><input type="checkbox" id="step1-5-4"><label for="step1-5-4">PMO template</label></li>
+                    </ol></li>
+                    <li><input type="checkbox" id="step1-6"><label for="step1-6">Fill Project details </label></li>
+                    <li> <ol>
+                        <li><input type="checkbox" id="step1-6-1"><label for="step1-6-1">Project category = Active</label></li>
+                        <li><input type="checkbox" id="step1-6-2"><label for="step1-6-2">Avatar = search the entity logo</label></li>
+                        <li><input type="checkbox" id="step1-6-3"><label for="step1-6-3">Project lead = project manager (information will be found from Zoho)</label></li>
+                    </ol></li>
+                    <li><input type="checkbox" id="step1-7"><label for="step1-7">Fill Project People</label>
+                     
+                    </li>
+                    <li>
+                        <ol>
+                            <li><input type="checkbox" id="step1-7-1"><label for="step1-7-1">Add a project manager = project lead</label></li>
+                            <li><input type="checkbox" id="step1-7-2"><label for="step1-7-2">Add administrator = Edit group</label></li>
+                        </ol>
+                    </li>
+                    <li><input type="checkbox" id="step1-8"><label for="step1-8">Fill project status from the project charter</label></li>
+                    <li><input type="checkbox" id="step1-9"><label for="step1-9">Order the Board</label>
+                       <li>
+                        <ol>
+                            <li><input type="checkbox" id="step1-9-1"><label for="step1-9-1">Reorder the columns to be as follows (To Do - Working on it - Done – Invoices – Employees – Costs - Archive)</label></li>
+                            <li><input type="checkbox" id="step1-9-2"><label for="step1-9-2">Assign the following tasks to the project manager and move to “working on it” column</label></li>
+                            <table border="1" cellpadding="5" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Task ID</th>
+                                        <th>Title - Summary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sign contract</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Create project methodology</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Fill Jira project charter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Please enter the project value</td>
+                                    </tr>
+                                </tbody>
+                            </table>                       </li>
+                            <li><input type="checkbox" id="step1-10-1"><label for="step1-10-1">Move the following tasks from “to do” column as in the following table</label></li>
+                            <table border="1" cellpadding="5" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Task ID</th>
+                                        <th>Title - Summary</th>
+                                        <th>Move to Column</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Please create an employee issue type for each employee in the project</td>
+                                        <td>Employees</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Please enter the project costs on cost issue type</td>
+                                        <td>Costs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Please enter the project invoices on invoice issue type</td>
+                                        <td>Invoices</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div class="step alt">
+                <h2><img src="step2-icon.png" alt="OneDrive logo" class="step-icon">Create OneDrive Folder</h2>
+                <ol class="substeps">
+                    <li><input type="checkbox" id="step2-1"><label for="step2-1">Copy “new projects” folder as template for the new folder</label></li>
+                    <li><input type="checkbox" id="step2-2"><label for="step2-2">Locate the project folder to the related entity folder (azm cit or pega or ...)</label></li>
+                    <li><input type="checkbox" id="step2-3"><label for="step2-3">Rename the folder following this convention: "project number from Zoho" - "project cost center" - "project start year" e.g., 0000 - cost center - 2023</label></li>
+                    <li><input type="checkbox" id="step2-4"><label for="step2-4">Navigate to the project folder -> open (1. Proposal Stage.) folder -> add all attachments from Zoho and rename them as field name in Zoho</label></li>
+                    <li>* Note: the remark field in Zoho might have the missing files (if existed)</li>
+                </ol>
+            </div>
+            <div class="step">
+                <h2><img src="step3-icon.png" alt="Outlook logo" class="step-icon">Send new project Email</h2>
+                <ol class="substeps">
+                    <li><input type="checkbox" id="step3-1"><label for="step3-1">Reply to the shared file email</label></li>
+                    <li><input type="checkbox" id="step3-2"><label for="step3-2">Change the title of the email by deleting anything before the " symbol</label></li>
+                    <li><input type="checkbox" id="step3-3"><label for="step3-3">Add the PMO team in the CC</label></li>
+                    <li><input type="checkbox" id="step3-4"><label for="step3-4">Add the photo from Heroes presentation</label></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
 </html>
